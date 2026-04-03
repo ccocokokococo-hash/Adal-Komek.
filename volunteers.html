@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Волонтёры и спонсоры — Adal Komek</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Adal Komek logo" class="logo" />
+        <div>
+          <div class="brand-title">Adal Komek</div>
+          <div class="brand-subtitle">Сообщество помощи</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="anti-fraud.html">Анти-мошенничество</a>
+        <a href="help.html">Кому помочь</a>
+        <a href="helped.html">Кому мы помогли</a>
+        <a href="volunteers.html" class="active">Волонтёры</a>
+        <a href="ngo.html">НПО и фонды</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Сообщество, которое меняет жизнь</span>
+        <h1>Волонтёры и спонсоры</h1>
+        <p class="hero-text">
+          Выберите формат участия: стать волонтёром, взять задание, поддержать разово
+          или оформить регулярную помощь.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-box">
+        <div class="form-card">
+          <h2>🌟 Стать волонтёром</h2>
+          <form id="volunteerForm" class="simple-form">
+            <input type="text" placeholder="Имя или ник" required />
+            <input type="text" placeholder="Город" required />
+            <select>
+              <option>Чем могу помочь</option>
+              <option>Доставка</option>
+              <option>Помощь пожилым</option>
+              <option>Сбор вещей</option>
+              <option>IT / медиа</option>
+              <option>Поддержка детей</option>
+            </select>
+            <textarea rows="5" placeholder="Коротко о себе и о том, как вы хотите помогать"></textarea>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+          </form>
+        </div>
+
+        <div class="form-card">
+          <h2>💰 Стать спонсором</h2>
+          <form id="sponsorForm" class="simple-form">
+            <input type="text" placeholder="Имя / компания" />
+            <select>
+              <option>Формат поддержки</option>
+              <option>Разовая помощь</option>
+              <option>Регулярная поддержка</option>
+            </select>
+            <select>
+              <option>Категория</option>
+              <option>Медицина</option>
+              <option>Дети</option>
+              <option>Социальная помощь</option>
+              <option>Подростки</option>
+            </select>
+            <input type="text" placeholder="Сумма / ресурс / формат" />
+            <button type="submit" class="btn btn-primary">Стать спонсором</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Задания</span>
+            <h2>Волонтёрские задачи</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="tasksGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-title">Adal Komek</div>
+        <p class="footer-text">Добро становится сильнее, когда есть сообщество.</p>
+      </div>
+      <div class="footer-links">
+        <a href="help.html">Сборы</a>
+        <a href="ngo.html">НПО</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
