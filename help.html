@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кому можно помочь — Adal Komek</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Adal Komek logo" class="logo" />
+        <div>
+          <div class="brand-title">Adal Komek</div>
+          <div class="brand-subtitle">Активные сборы</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="anti-fraud.html">Анти-мошенничество</a>
+        <a href="help.html" class="active">Кому помочь</a>
+        <a href="helped.html">Кому мы помогли</a>
+        <a href="volunteers.html">Волонтёры</a>
+        <a href="ngo.html">НПО и фонды</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Прозрачная благотворительность</span>
+        <h1>Кому можно помочь сейчас</h1>
+        <p class="hero-text">
+          Поддержите медицинские, социальные и срочные сборы. Для каждого сбора доступны описание,
+          цель, прогресс и быстрые действия.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="medical">Медицинские</button>
+          <button class="filter-btn" data-filter="children">Детские</button>
+          <button class="filter-btn" data-filter="social">Социальные</button>
+          <button class="filter-btn" data-filter="urgent">Срочные</button>
+        </div>
+
+        <div class="cards-grid" id="campaignsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-title">Adal Komek</div>
+        <p class="footer-text">Помощь должна быть понятной и прозрачной.</p>
+      </div>
+      <div class="footer-links">
+        <a href="anti-fraud.html">Проверка</a>
+        <a href="volunteers.html">Волонтёры</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
