@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тебя услышат — Adal Komek</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Adal Komek logo" class="logo" />
+        <div>
+          <div class="brand-title">Adal Komek</div>
+          <div class="brand-subtitle">Тебя услышат</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="anti-fraud.html">Анти-мошенничество</a>
+        <a href="help.html">Кому помочь</a>
+        <a href="helped.html">Кому мы помогли</a>
+        <a href="volunteers.html">Волонтёры</a>
+        <a href="ngo.html">НПО и фонды</a>
+        <a href="teens.html" class="active">Тебя услышат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Анонимно. Без осуждения. С поддержкой.</span>
+        <h1>Тебя услышат</h1>
+        <p class="hero-text">
+          Пространство, где подросток может выговориться, пройти мини-тесты,
+          найти истории других ребят и получить экстренные контакты при риске.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-box">
+        <div class="info-box">
+          <h2>💬 Мне нужно поговорить</h2>
+          <div class="emotion-grid">
+            <button class="emotion-btn">😔 Мне плохо</button>
+            <button class="emotion-btn">🧠 Стресс / тревога</button>
+            <button class="emotion-btn">🏫 Проблемы в школе</button>
+            <button class="emotion-btn">👨‍👩‍👧 Проблемы в семье</button>
+            <button class="emotion-btn">💔 Одиночество</button>
+          </div>
+
+          <div class="chat-box" id="teenChat">
+            <div class="chat-message bot">
+              Я рядом. Можешь написать, что случилось. Здесь можно начать с малого.
+            </div>
+          </div>
+
+          <div class="chat-input-row">
+            <input type="text" id="teenInput" placeholder="Напиши, что чувствуешь..." />
+            <button class="btn btn-primary" id="sendTeenMessage">Отправить</button>
+          </div>
+
+          <div id="teenAlertBox" class="danger-box hidden">
+            <strong>Твоя безопасность важна.</strong>
+            <p>Если тебе страшно, тебя бьют или ты не хочешь жить — нужна помощь прямо сейчас.</p>
+            <div class="hotline-card">
+              <span>📞 Национальная линия доверия для детей и молодежи</span>
+              <strong>111</strong>
+            </div>
+            <button class="btn btn-primary">Позвонить сейчас</button>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h2>🟡 Мини-тесты</h2>
+          <div class="test-list">
+            <button class="test-link" data-test="anxiety">Уровень тревожности</button>
+            <button class="test-link" data-test="burnout">Есть ли у меня выгорание?</button>
+            <button class="test-link" data-test="support">Нужна ли мне помощь?</button>
+          </div>
+
+          <div class="quiz-box" id="quizBox">
+            <h3 id="quizTitle">Выберите тест</h3>
+            <div id="quizQuestions"></div>
+            <button class="btn btn-primary hidden" id="submitQuizBtn">Показать результат</button>
+            <div id="quizResult" class="analysis-result hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Ты не один</span>
+            <h2>Истории подростков</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="teenStoriesGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-title">Adal Komek</div>
+        <p class="footer-text">Анонимно, безопасно, по-человечески.</p>
+      </div>
+      <div class="footer-links">
+        <a href="ngo.html">НПО</a>
+        <a href="volunteers.html">Наставники</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
