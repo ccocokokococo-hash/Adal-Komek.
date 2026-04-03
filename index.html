@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adal Komek — цифровая экосистема доверия</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Adal Komek logo" class="logo" />
+        <div>
+          <div class="brand-title">Adal Komek</div>
+          <div class="brand-subtitle">Цифровая экосистема доверия</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="anti-fraud.html">Анти-мошенничество</a>
+        <a href="help.html">Кому помочь</a>
+        <a href="helped.html">Кому мы помогли</a>
+        <a href="volunteers.html">Волонтёры</a>
+        <a href="ngo.html">НПО и фонды</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Платформа помощи нового поколения</span>
+          <h1>Помогать безопасно. Получать поддержку без страха.</h1>
+          <p class="hero-text">
+            Adal Komek объединяет благотворительность, проверку сборов, волонтёрство,
+            подростковую поддержку и доступ к реальным НПО Казахстана в одной системе.
+          </p>
+
+          <div class="hero-actions">
+            <a href="anti-fraud.html" class="btn btn-primary">Проверить сбор</a>
+            <a href="help.html" class="btn btn-secondary">Помочь сейчас</a>
+            <a href="teens.html" class="btn btn-soft">Мне нужно поговорить</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <div class="stat-num" id="statHelpedPeople">1284</div>
+              <div class="stat-label">человека получили помощь</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" id="statFraudChecks">9460</div>
+              <div class="stat-label">проверок сборов</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" id="statVolunteers">372</div>
+              <div class="stat-label">волонтёра в системе</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel glass">
+          <h3>Быстрые действия</h3>
+          <div class="quick-grid">
+            <a href="anti-fraud.html" class="quick-card">
+              <div class="quick-icon">🚨</div>
+              <div>
+                <h4>Анти-мошенничество</h4>
+                <p>Проверка подозрительных сборов через AI-анализ.</p>
+              </div>
+            </a>
+            <a href="help.html" class="quick-card">
+              <div class="quick-icon">🤝</div>
+              <div>
+                <h4>Кому можно помочь</h4>
+                <p>Прозрачные активные сборы с прогрессом и описанием.</p>
+              </div>
+            </a>
+            <a href="volunteers.html" class="quick-card">
+              <div class="quick-icon">🌟</div>
+              <div>
+                <h4>Стать волонтёром</h4>
+                <p>Найти задачу и включиться в помощь прямо сейчас.</p>
+              </div>
+            </a>
+            <a href="teens.html" class="quick-card">
+              <div class="quick-icon">💬</div>
+              <div>
+                <h4>Тебя услышат</h4>
+                <p>Безопасное пространство для подростков.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Срочная помощь</span>
+            <h2>Актуальные сборы</h2>
+          </div>
+          <a href="help.html" class="link-more">Смотреть все</a>
+        </div>
+
+        <div class="cards-grid" id="featuredCampaigns"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Прозрачность</span>
+            <h2>Кому мы уже помогли</h2>
+          </div>
+          <a href="helped.html" class="link-more">Все истории</a>
+        </div>
+
+        <div class="cards-grid" id="successStoriesPreview"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-box">
+        <div class="info-box">
+          <span class="eyebrow">Для подростков</span>
+          <h2>Даже если ты не готов говорить с людьми — можно начать с AI</h2>
+          <p>
+            В разделе «Тебя услышат» подросток может анонимно выговориться,
+            пройти мини-тесты и получить контакты реальной помощи в ситуации риска.
+          </p>
+          <a href="teens.html" class="btn btn-primary">Открыть раздел</a>
+        </div>
+
+        <div class="info-box accent-box">
+          <span class="eyebrow">ИИ-бот</span>
+          <h2>Подключение AI-бота</h2>
+          <p>
+            В этот блок можно встроить Elfsight / Tidio / Jotform AI / любой другой
+            чат-виджет для поддержки пользователей и навигации по платформе.
+          </p>
+          <div class="bot-placeholder">
+            <div class="bot-head">🤖 AI Assistant</div>
+            <div class="bot-body">
+              <p>Привет. Я помогу проверить сбор, найти НПО или подобрать, кому помочь.</p>
+              <p class="muted">Здесь будет встроенный виджет вашего бота.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Почему это важно</span>
+            <h2>Главная идея проекта</h2>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          Это не просто приложение для благотворительности. Это цифровая экосистема доверия,
+          где каждая помощь прозрачна, каждый сбор проверен, а каждый человек может либо помочь,
+          либо получить помощь.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-title">Adal Komek</div>
+        <p class="footer-text">Платформа доверия, прозрачности и реальной поддержки.</p>
+      </div>
+      <div class="footer-links">
+        <a href="anti-fraud.html">Проверка сборов</a>
+        <a href="ngo.html">НПО</a>
+        <a href="teens.html">Подростки</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
