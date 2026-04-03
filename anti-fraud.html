@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анти-мошенничество — Adal Komek</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Adal Komek logo" class="logo" />
+        <div>
+          <div class="brand-title">Adal Komek</div>
+          <div class="brand-subtitle">Анти-мошенничество</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="anti-fraud.html" class="active">Анти-мошенничество</a>
+        <a href="help.html">Кому помочь</a>
+        <a href="helped.html">Кому мы помогли</a>
+        <a href="volunteers.html">Волонтёры</a>
+        <a href="ngo.html">НПО и фонды</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">AI-проверка благотворительных сборов</span>
+        <h1>Проверить подозрительный сбор</h1>
+        <p class="hero-text">
+          Вставьте текст, ссылку или описание. Система проверит тревожные признаки:
+          давление на эмоции, отсутствие подтверждений, срочность, подозрительные реквизиты.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-box">
+        <div class="form-card">
+          <h2>🔍 Проверка сбора</h2>
+          <textarea id="fraudInput" rows="10" placeholder="Вставьте ссылку, описание сбора или текст публикации..."></textarea>
+          <div class="form-actions">
+            <button class="btn btn-primary" id="checkFraudBtn">Проверить сбор</button>
+            <button class="btn btn-secondary" id="clearFraudBtn">Очистить</button>
+          </div>
+
+          <div id="fraudResult" class="analysis-result hidden"></div>
+        </div>
+
+        <div class="info-box">
+          <h2>🧠 На что смотрит система</h2>
+          <ul class="nice-list">
+            <li>Подозрительные слова: «срочно», «последний шанс», «спасите прямо сейчас»</li>
+            <li>Отсутствие документов, диагноза, подтверждений</li>
+            <li>Нереалистично крупные суммы без прозрачности</li>
+            <li>Только перевод на личную карту</li>
+            <li>Давление на вину и эмоции без фактов</li>
+          </ul>
+
+          <div class="warn-box">
+            <strong>Важно:</strong> это демонстрационная AI-оценка риска. Окончательное решение
+            должно подтверждаться ручной проверкой документов и реквизитов.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container split-box">
+        <div class="info-box">
+          <h2>📢 Сообщить о мошенничестве</h2>
+          <form class="simple-form" id="complaintForm">
+            <input type="text" placeholder="Ссылка на подозрительный сбор" />
+            <input type="text" placeholder="Ваш контакт (по желанию)" />
+            <textarea rows="6" placeholder="Кратко опишите, что вызывает подозрение"></textarea>
+            <button type="submit" class="btn btn-primary">Пожаловаться</button>
+          </form>
+        </div>
+
+        <div class="info-box">
+          <h2>🧩 База мошеннических схем</h2>
+          <div class="scheme-list">
+            <div class="scheme-item">«Срочно нужна операция, нет документов»</div>
+            <div class="scheme-item">«Перевод только на карту, фонд не нужен»</div>
+            <div class="scheme-item">«Фото чужие, история без подтверждений»</div>
+            <div class="scheme-item">«Давление: если не поможешь сейчас — будет поздно»</div>
+          </div>
+
+          <h2 class="mt-24">📞 Куда обратиться</h2>
+          <div class="contact-card">
+            <strong>Экстренные службы Казахстана:</strong>
+            <p>При подозрении на мошенничество — обращение в правоохранительные органы и киберполицию.</p>
+            <div class="contact-actions">
+              <button class="btn btn-soft">Сообщить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-title">Adal Komek</div>
+        <p class="footer-text">Проверка. Прозрачность. Защита.</p>
+      </div>
+      <div class="footer-links">
+        <a href="help.html">Сборы</a>
+        <a href="ngo.html">НПО</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
